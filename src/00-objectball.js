@@ -235,7 +235,7 @@ function doesLongNameStealATon() {
 }
 console.log(playerWithLongestName());   // should print "Brendan Haywood"
 console.log(mostStealsPlayer());        // should also print "Brendan Haywood"
-console.log(doesLongNameStealATon());   // should log true
+console.log(doesLongNameStealATon());   // logs true
 
 function mostPointsScored() {
     const game = gameObject();
