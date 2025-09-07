@@ -147,7 +147,7 @@ function teamColors(teamName) {
     }
 }
 
-// All team names
+// Team names
 function teamNames() {
     let game = gameObject();
     return [game.home.teamName, game.away.teamName];
@@ -173,7 +173,7 @@ function playerStats(playerName) {
     }
 }
 
-// Biggest shoe size -> rebounds
+// Biggest shoe size , rebounds
 function bigShoeRebounds() {
     let game = gameObject();
     let biggestShoe = 0;
@@ -192,13 +192,13 @@ function bigShoeRebounds() {
 }
 
 
-console.log(numPointsScored("Ben Gordon"));   // should log 33
-console.log(shoeSize("Mason Plumlee"));       // should log 19
+console.log(numPointsScored("Ben Gordon"));   // shows  33
+console.log(shoeSize("Mason Plumlee"));       // shows 19
 console.log(teamColors("Brooklyn Nets"));     // ["Black", "White"]
 console.log(teamNames());                     // ["Brooklyn Nets", "Charlotte Hornets"]
 console.log(playerNumbers("Charlotte Hornets")); // [4, 0, 2, 8, 33]
 console.log(playerStats("Alan Anderson"));
-console.log(bigShoeRebounds());               // rebounds of Mason Plumlee (largest shoe 19 => 12)
+console.log(bigShoeRebounds());               // rebounds for Mason Plumlee (largest shoe 19 => 12)
 
 function playerWithLongestName() {
     let game = gameObject();
@@ -233,9 +233,9 @@ function mostStealsPlayer() {
 function doesLongNameStealATon() {
     return playerWithLongestName() === mostStealsPlayer();
 }
-console.log(playerWithLongestName());   // should print "Brendan Haywood"
-console.log(mostStealsPlayer());        // should also print "Brendan Haywood"
-console.log(doesLongNameStealATon());   // logs true
+console.log(playerWithLongestName());   // shows "Brendan Haywood"
+console.log(mostStealsPlayer());        // shows "Brendan Haywood"
+console.log(doesLongNameStealATon());   //  true
 
 function mostPointsScored() {
     const game = gameObject();
