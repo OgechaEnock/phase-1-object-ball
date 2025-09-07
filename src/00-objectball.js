@@ -294,21 +294,6 @@ function winningTeam() {
     return winner;
 }
 
-function playerWithLongestName() {
-    const game = gameObject();
-    let longestNamePlayer = "";
-
-    for (let team in game) {
-        const players = game[team].players;
-        for (let player in players) {
-            if (player.length > longestNamePlayer.length) {
-                longestNamePlayer = player;
-            }
-        }
-    }
-
-    return longestNamePlayer;
-}
 
 console.log("Player with most points:", mostPointsScored());
 console.log("Winning team:", winningTeam());
